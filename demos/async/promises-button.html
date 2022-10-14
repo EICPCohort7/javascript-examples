@@ -18,11 +18,15 @@
       </header>
       <!-- .row>.col>button.btn.btn-primary -->
       <div class="row">
-        <div class="col"><button class="btn btn-primary">Click Me</button></div>
+        <div class="col">
+          <button class="btn btn-primary" id="separate-button">Separate Promises</button>
+          <button class="btn btn-danger" id="chained-button">Chained Promises</button>
+          <button class="btn btn-warning" id="async-button">Async/Await</button>
+        </div>
       </div>
       <div class="row">
         <div class="col">
-          <p>There are ? movies.</p>
+          <p id="movie-results">There are ? movies.</p>
         </div>
       </div>
     </main>
