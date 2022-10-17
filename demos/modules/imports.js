@@ -10,8 +10,8 @@ console.log(x); // 10
 import { a, d } from './exports.js';
 
 // Import and rename
-import { b as bee } from './exports.js';
-console.log(bee); // 2
+import { a as alpha } from './exports.js';
+console.log(alpha); // 2
 
 // Rename one, not the other
 import { x as q, y } from './exports.js';
