@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .outer {
+        border: 2px black solid;
+        padding: 25px;
+        background-color: yellow;
+      }
+
+      .inner {
+        border: 2px green dotted;
+        padding: 25px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <p>This is the outer div</p>
+      <div class="inner">
+        <p>This is the inner div</p>
+      </div>
+    </div>
+
+    <script>
+      let outer = document.querySelector('.outer');
+      let inner = document.querySelector('.inner');
+
+      outer.addEventListener('click', () => console.log('You clicked on the outer div'));
+      inner.addEventListener('click', () => console.log('You clicked on the inner div'));
+      document
+        .querySelector('.inner p')
+        .addEventListener('click', () => console.log('Clicked on the paragraph'));
+    </script>
+  </body>
+</html>
