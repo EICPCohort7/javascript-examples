@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/bootstrap.css" />
+    <title>Fetch vs Axios</title>
+  </head>
+  <body>
+    <main class="container">
+      <header class="row">
+        <div class="col">
+          <h1>Fetch vs Axios</h1>
+          <hr />
+        </div>
+      </header>
+      <div class="row">
+        <div class="col">
+          <button id="fetch-button" class="btn btn-primary">Fetch</button>
+          <button id="axios-button" class="btn btn-danger">Axios</button>
+        </div>
+        <div class="col">
+          <h3 id="api-header">Fetching with ?</h3>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Rating</th>
+              </tr>
+            </thead>
+            <tbody id="movie-table"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="fetch-vs-axios.js" type="module"></script>
+  </body>
+</html>
